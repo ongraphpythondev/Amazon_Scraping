@@ -1,0 +1,40 @@
+# Amazon Product Scraper
+
+    A Python script using Selenium to scrape product information from Amazon and upload it to eBay.
+
+## Prerequisites
+
+    - Python 3.x
+    - Google Chrome
+    - ChromeDriver
+    - Selenium
+    - Pandas
+    - Requests
+
+## Installation
+
+1. **Clone the repository**:
+   - git clone <repository_url>
+   - cd <repository_directory>
+   - pip install -r requirements.txt
+   
+2. **Install dependencies**:
+    - pip install selenium pandas requests
+
+3. **Configuration**:
+    - driver = webdriver.Chrome(executable_path='/path/to/chromedriver', options=options)
+
+4. **Running the Script**:
+    - python scraper.py
+
+5. **Script Workflow**:
+
+        Opens Amazon and searches for "laptop".
+        Fetches product URLs from the search results.
+        Extracts product details (title, price, image, description) from each product page.
+        Calls ebaySell function from EbayProduct module to upload data to eBay.
+
+6. **Troubleshooting**:
+        Ensure compatible versions of Chrome and ChromeDriver.
+        Check console for error messages if the script fails.
+        Ensure a stable internet connection.
